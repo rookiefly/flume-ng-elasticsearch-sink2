@@ -34,7 +34,7 @@ import org.elasticsearch.common.io.BytesStream;
 public interface ElasticSearchEventSerializer extends Configurable,
     ConfigurableComponent {
 
-  public static final Charset charset = Charset.defaultCharset();
+  Charset charset = Charset.defaultCharset();
 
   /**
    * Return an {@link BytesStream} made up of the serialized flume event
@@ -44,5 +44,5 @@ public interface ElasticSearchEventSerializer extends Configurable,
    * @throws IOException
    *           If an error occurs during serialization
    */
-  abstract BytesStream getContentBuilder(Event event) throws IOException;
+  BytesStream getContentBuilder(Event event) throws IOException;
 }
