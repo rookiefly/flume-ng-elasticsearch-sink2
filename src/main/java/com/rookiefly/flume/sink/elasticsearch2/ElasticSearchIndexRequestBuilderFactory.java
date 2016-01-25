@@ -36,7 +36,7 @@ import java.util.TimeZone;
 public interface ElasticSearchIndexRequestBuilderFactory extends Configurable,
     ConfigurableComponent {
 
-  static final FastDateFormat df = FastDateFormat.getInstance("yyyy-MM-dd",
+  FastDateFormat df = FastDateFormat.getInstance("yyyy-MM-dd",
       TimeZone.getTimeZone("Etc/UTC"));
 
   /**

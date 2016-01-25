@@ -17,16 +17,15 @@
  * under the License.
  */
 package com.rookiefly.flume.sink.elasticsearch2;
-import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
-
-import java.io.IOException;
-import java.nio.charset.Charset;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.common.xcontent.XContentParser;
 import org.elasticsearch.common.xcontent.XContentType;
+
+import java.io.IOException;
+import java.nio.charset.Charset;
 
 /**
  * Utility methods for using ElasticSearch {@link XContentBuilder}
